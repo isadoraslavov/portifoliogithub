@@ -1,33 +1,29 @@
+index.html
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portfólio | Isadora Slavov</title>
-
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
   <style>
-
     *{
       margin:0;
       padding:0;
       box-sizing:border-box;
     }
-
     html{
       scroll-behavior:smooth;
     }
-
     body{
       font-family:'Inter', sans-serif;
       background:#f7f7f7;
       color:#2b2b2b;
       overflow-x:hidden;
     }
-
     .background{
       position:fixed;
       inset:0;
@@ -37,7 +33,6 @@
       radial-gradient(circle at bottom right, rgba(75,0,85,0.18), transparent 35%),
       #f7f7f7;
     }
-
     header{
       width:100%;
       padding:24px 8%;
@@ -51,29 +46,24 @@
       border-bottom:1px solid rgba(0,0,0,0.05);
       z-index:100;
     }
-
     .logo{
       font-size:20px;
       font-weight:700;
       color:#4b0055;
     }
-
     nav{
       display:flex;
       gap:28px;
     }
-
     nav a{
       text-decoration:none;
       color:#555;
       font-weight:500;
       transition:0.3s;
     }
-
     nav a:hover{
       color:#d61c8c;
     }
-
     .hero{
       min-height:100vh;
       display:flex;
@@ -81,7 +71,6 @@
       justify-content:center;
       padding:80px 8%;
     }
-
     .hero-content{
       max-width:1100px;
       width:100%;
@@ -90,21 +79,18 @@
       gap:60px;
       align-items:center;
     }
-
     .hero-text h2{
       color:#d61c8c;
       font-size:18px;
       margin-bottom:16px;
       font-weight:600;
     }
-
     .hero-text h1{
       font-size:64px;
       line-height:1.05;
       color:#2b2b2b;
       margin-bottom:24px;
     }
-
     .hero-text p{
       font-size:18px;
       line-height:1.8;
@@ -112,13 +98,11 @@
       margin-bottom:35px;
       max-width:520px;
     }
-
     .buttons{
       display:flex;
       gap:18px;
       flex-wrap:wrap;
     }
-
     .btn{
       text-decoration:none;
       padding:16px 28px;
@@ -126,27 +110,22 @@
       font-weight:600;
       transition:0.3s;
     }
-
     .btn-primary{
       background:#d61c8c;
       color:white;
     }
-
     .btn-primary:hover{
       background:#4b0055;
       transform:translateY(-2px);
     }
-
     .btn-secondary{
       border:2px solid #d61c8c;
       color:#d61c8c;
       background:white;
     }
-
     .btn-secondary:hover{
       background:#fff0f8;
     }
-
     .hero-card{
       background:rgba(255,255,255,0.8);
       border:1px solid rgba(255,255,255,0.6);
@@ -155,52 +134,43 @@
       padding:40px;
       box-shadow:0 20px 50px rgba(0,0,0,0.08);
     }
-
     .hero-card img{
       width:100%;
       border-radius:22px;
       margin-bottom:24px;
     }
-
     .hero-card h3{
       color:#4b0055;
       margin-bottom:14px;
       font-size:24px;
     }
-
     .hero-card p{
       color:#666;
       line-height:1.7;
     }
-
     section{
       padding:100px 8%;
     }
-
     .section-title{
       text-align:center;
       margin-bottom:60px;
     }
-
     .section-title h2{
       font-size:42px;
       color:#4b0055;
       margin-bottom:16px;
     }
-
     .section-title p{
       color:#666;
       max-width:600px;
       margin:auto;
       line-height:1.7;
     }
-
     .cards{
       display:grid;
       grid-template-columns:repeat(auto-fit, minmax(280px,1fr));
       gap:28px;
     }
-
     .card{
       background:white;
       border-radius:28px;
@@ -208,29 +178,24 @@
       box-shadow:0 10px 35px rgba(0,0,0,0.06);
       transition:0.3s;
     }
-
     .card:hover{
       transform:translateY(-6px);
     }
-
     .card h3{
       color:#4b0055;
       margin-bottom:16px;
       font-size:24px;
     }
-
     .card p{
       color:#666;
       line-height:1.8;
       margin-bottom:24px;
     }
-
     .card a{
       text-decoration:none;
       color:#d61c8c;
       font-weight:600;
     }
-
     footer{
       padding:60px 8%;
       text-align:center;
@@ -238,75 +203,52 @@
       border-top:1px solid rgba(0,0,0,0.06);
       margin-top:80px;
     }
-
     @media(max-width:900px){
-
       .hero-content{
         grid-template-columns:1fr;
       }
-
       .hero-text h1{
         font-size:48px;
       }
-
       nav{
         display:none;
       }
-
     }
-
     @media(max-width:600px){
-
       .hero-text h1{
         font-size:38px;
       }
-
       .section-title h2{
         font-size:32px;
       }
-
       .hero-card,
       .card{
         padding:24px;
       }
-
     }
-
   </style>
 </head>
-
 <body>
-
   <div class="background"></div>
-
   <header>
     <div class="logo">Isadora Slavov</div>
-
     <nav>
       <a href="#sobre">Sobre</a>
       <a href="#projetos">Projetos</a>
       <a href="#contato">Contato</a>
     </nav>
   </header>
-
   <section class="hero" id="sobre">
-
     <div class="hero-content">
-
       <div class="hero-text">
-
         <h2>PORTFÓLIO ACADÊMICO</h2>
-
         <h1>
           Desenvolvendo experiências digitais modernas.
         </h1>
-
         <p>
           Estudante de Ciência da Computação no CEUB, desenvolvendo projetos acadêmicos e pessoais com foco em design moderno, experiência do usuário e desenvolvimento web.
         </p>
-
         <div class="buttons">
-
           <a
             href="#projetos"
             target="_blank"
@@ -314,7 +256,6 @@
           >
             Projetos
           </a>
-
           <a
             href="https://github.com/isadoraslavov"
             target="_blank"
@@ -322,78 +263,88 @@
           >
             GitHub
           </a>
-
         </div>
-
       </div>
-
       <div class="hero-card">
-
-        <img src="logo.png" alt="Logo CEUB">
-
-        <h3>Projeto Universitário</h3>
-
+        <h3>Portfólio Acadêmico</h3>
         <p>
           Portfólio acadêmico desenvolvido para apresentação de projetos, habilidades e documentação utilizando GitHub Pages.
         </p>
-
       </div>
-
     </div>
-
   </section>
-
   <section id="projetos">
-
     <div class="section-title">
       <h2>Projetos</h2>
       <p>
         Alguns dos projetos desenvolvidos durante a graduação e estudos em desenvolvimento web.
       </p>
     </div>
-
     <div class="cards">
-
       <div class="card">
-        <h3>Planner DMCON</h3>
+        <h3>Planner Ademicon</h3>
         <p>
-          Plataforma de agenda digital desenvolvida com foco em organização de eventos e experiência moderna do usuário.
+          Sistema completo de agenda digital desenvolvido com frontend moderno, backend integrado e banco de dados Supabase. O projeto possui autenticação, gerenciamento de eventos e foco em experiência intuitiva para o usuário.
         </p>
-
-        <a href="#projetos" target="_blank">
-          Acessar projeto
-        </a>
+        <span style="color:#d61c8c;font-weight:600;">
+          Projeto completo com Supabase e backend integrado
+        </span>
       </div>
-
       <div class="card">
-        <h3>Portfólio Acadêmico</h3>
+        <h3>Portfólio Pessoal</h3>
         <p>
-          Repositório público com projetos versionados utilizando GitHub e integração com plataformas profissionais.
+          Portfólio desenvolvido para apresentação profissional, reunindo projetos acadêmicos, habilidades e experiências em desenvolvimento web.
         </p>
-
-        <a href="https://github.com/isadoraslavov" target="_blank">
-          Ver repositório
-        </a>
+        <span style="color:#d61c8c;font-weight:600;">
+          Portfólio profissional
+        </span>
       </div>
-
       <div class="card">
-        <h3>GitHub Pages</h3>
+        <h3>Calculadora em Assembly</h3>
         <p>
-          Página desenvolvida para apresentação de projetos acadêmicos, documentação e compartilhamento profissional.
+          Projeto acadêmico desenvolvido utilizando linguagem Assembly, com implementação de operações matemáticas e lógica de baixo nível.
         </p>
-
-        <a href="#sobre">
-          Saiba mais
-        </a>
+        <span style="color:#d61c8c;font-weight:600;">
+          Projeto acadêmico
+        </span>
       </div>
-
     </div>
-
   </section>
-
   <footer id="contato">
+    <h2 style="margin-bottom:20px;color:#4b0055;">Contato</h2>
+    <p style="margin-bottom:14px;">
+      GitHub: 
+      <a href="https://github.com/isadoraslavov" target="_blank" style="color:#d61c8c;text-decoration:none;">
+        github.com/isadoraslavov
+      </a>
+    </p>
+    <p style="margin-bottom:14px;">
+      LinkedIn:
+      <a href="https://www.linkedin.com/in/isadora-slavov-222b36395?utm_source=share_via&utm_content=profile&utm_medium=member_ios" target="_blank" style="color:#d61c8c;text-decoration:none;">
+        linkedin.com/in/isadora-slavov
+      </a>
+    </p>
+    <p style="margin-bottom:30px;">
+      E-mail:
+      <a href="mailto:isadoraslavov@gmail.com" style="color:#d61c8c;text-decoration:none;">
+        isadoraslavov@gmail.com
+      </a>
+    </p>
     Desenvolvido por Isadora Slavov • Ciência da Computação • CEUB
   </footer>
-
 </body>
 </html>
+
+Estrutura da pasta
+
+index.html
+foto.jpg
+curriculo.pdf
+# Como publicar
+1. Sobe o index.html, foto.jpg e curriculo.pdf no GitHub
+2. Vai em Settings
+3. Pages
+4. Deploy from branch
+5. main
+6. Save
+Depois o GitHub gera o link automático da sua GitHub Page.
