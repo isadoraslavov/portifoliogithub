@@ -3,25 +3,33 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>Portfólio | Isadora Slavov</title>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
   <style>
+
     *{
       margin:0;
       padding:0;
       box-sizing:border-box;
     }
+
     html{
       scroll-behavior:smooth;
     }
+
     body{
       font-family:'Inter', sans-serif;
       background:#f7f7f7;
       color:#2b2b2b;
       overflow-x:hidden;
     }
+
     .background{
       position:fixed;
       inset:0;
@@ -31,6 +39,7 @@
       radial-gradient(circle at bottom right, rgba(75,0,85,0.18), transparent 35%),
       #f7f7f7;
     }
+
     header{
       width:100%;
       padding:24px 8%;
@@ -44,24 +53,13 @@
       border-bottom:1px solid rgba(0,0,0,0.05);
       z-index:100;
     }
+
     .logo{
       font-size:20px;
       font-weight:700;
       color:#4b0055;
     }
-    nav{
-      display:flex;
-      gap:28px;
-    }
-    nav a{
-      text-decoration:none;
-      color:#555;
-      font-weight:500;
-      transition:0.3s;
-    }
-    nav a:hover{
-      color:#d61c8c;
-    }
+
     .hero{
       min-height:100vh;
       display:flex;
@@ -69,6 +67,7 @@
       justify-content:center;
       padding:80px 8%;
     }
+
     .hero-content{
       max-width:1100px;
       width:100%;
@@ -77,18 +76,21 @@
       gap:60px;
       align-items:center;
     }
+
     .hero-text h2{
       color:#d61c8c;
       font-size:18px;
       margin-bottom:16px;
       font-weight:600;
     }
+
     .hero-text h1{
       font-size:64px;
       line-height:1.05;
       color:#2b2b2b;
       margin-bottom:24px;
     }
+
     .hero-text p{
       font-size:18px;
       line-height:1.8;
@@ -96,11 +98,13 @@
       margin-bottom:35px;
       max-width:520px;
     }
+
     .buttons{
       display:flex;
       gap:18px;
       flex-wrap:wrap;
     }
+
     .btn{
       text-decoration:none;
       padding:16px 28px;
@@ -108,22 +112,27 @@
       font-weight:600;
       transition:0.3s;
     }
+
     .btn-primary{
       background:#d61c8c;
       color:white;
     }
+
     .btn-primary:hover{
       background:#4b0055;
       transform:translateY(-2px);
     }
+
     .btn-secondary{
       border:2px solid #d61c8c;
       color:#d61c8c;
       background:white;
     }
+
     .btn-secondary:hover{
       background:#fff0f8;
     }
+
     .hero-card{
       background:rgba(255,255,255,0.8);
       border:1px solid rgba(255,255,255,0.6);
@@ -132,43 +141,52 @@
       padding:40px;
       box-shadow:0 20px 50px rgba(0,0,0,0.08);
     }
+
     .hero-card img{
       width:100%;
-      border-radius:22px;
+      border-radius:24px;
       margin-bottom:24px;
     }
+
     .hero-card h3{
       color:#4b0055;
       margin-bottom:14px;
       font-size:24px;
     }
+
     .hero-card p{
       color:#666;
       line-height:1.7;
     }
+
     section{
       padding:100px 8%;
     }
+
     .section-title{
       text-align:center;
       margin-bottom:60px;
     }
+
     .section-title h2{
       font-size:42px;
       color:#4b0055;
       margin-bottom:16px;
     }
+
     .section-title p{
       color:#666;
       max-width:600px;
       margin:auto;
       line-height:1.7;
     }
+
     .cards{
       display:grid;
       grid-template-columns:repeat(auto-fit, minmax(280px,1fr));
       gap:28px;
     }
+
     .card{
       background:white;
       border-radius:28px;
@@ -176,172 +194,257 @@
       box-shadow:0 10px 35px rgba(0,0,0,0.06);
       transition:0.3s;
     }
+
     .card:hover{
       transform:translateY(-6px);
     }
+
     .card h3{
       color:#4b0055;
       margin-bottom:16px;
       font-size:24px;
     }
+
     .card p{
       color:#666;
       line-height:1.8;
       margin-bottom:24px;
     }
-    .card a{
-      text-decoration:none;
-      color:#d61c8c;
-      font-weight:600;
-    }
+
     footer{
-      padding:60px 8%;
+      padding:80px 8%;
       text-align:center;
-      color:#777;
-      border-top:1px solid rgba(0,0,0,0.06);
       margin-top:80px;
     }
+
+    .contact-buttons{
+      display:flex;
+      justify-content:center;
+      gap:20px;
+      flex-wrap:wrap;
+      margin-top:40px;
+    }
+
+    .contact-card{
+      background:white;
+      padding:18px 28px;
+      border-radius:18px;
+      text-decoration:none;
+      color:#4b0055;
+      font-weight:600;
+      box-shadow:0 10px 30px rgba(0,0,0,0.08);
+      transition:0.3s;
+    }
+
+    .contact-card:hover{
+      transform:translateY(-4px);
+    }
+
+    .footer-text{
+      margin-top:40px;
+      color:#888;
+    }
+
     @media(max-width:900px){
+
       .hero-content{
         grid-template-columns:1fr;
       }
+
       .hero-text h1{
         font-size:48px;
       }
-      nav{
-        display:none;
-      }
+
     }
+
     @media(max-width:600px){
+
       .hero-text h1{
         font-size:38px;
       }
+
       .section-title h2{
         font-size:32px;
       }
+
       .hero-card,
       .card{
         padding:24px;
       }
+
     }
+
   </style>
 </head>
+
 <body>
+
   <div class="background"></div>
+
   <header>
     <div class="logo">Isadora Slavov</div>
-    <nav></nav>
   </header>
+
   <section class="hero" id="sobre">
+
     <div class="hero-content">
+
       <div class="hero-text">
+
         <h2>PORTFÓLIO ACADÊMICO</h2>
+
         <h1>
           Desenvolvendo experiências digitais modernas.
         </h1>
+
         <p>
           Estudante de Ciência da Computação no CEUB, desenvolvendo projetos acadêmicos e pessoais com foco em design moderno, experiência do usuário e desenvolvimento web.
         </p>
+
         <div class="buttons">
-          
+
           <a
             href="#projetos"
             class="btn btn-primary"
           >
             Projetos
           </a>
+
           <a
             href="#contato"
             class="btn btn-secondary"
           >
             Contato
           </a>
+
           <a
-            href="curriculo.pdf"
+            href="assets/curriculo-isadora.pdf"
             target="_blank"
             class="btn btn-secondary"
           >
             Download CV
           </a>
+
         </div>
+
       </div>
+
       <div class="hero-card">
+
+        <img src="assets/foto-perfil.jpg" alt="Foto de perfil">
+
         <h3>Portfólio Acadêmico</h3>
+
         <p>
           Portfólio acadêmico desenvolvido para apresentação de projetos, habilidades e documentação utilizando GitHub Pages.
         </p>
+
       </div>
+
     </div>
+
   </section>
+
   <section id="projetos">
+
     <div class="section-title">
       <h2>Projetos</h2>
+
       <p>
         Alguns dos projetos desenvolvidos durante a graduação e estudos em desenvolvimento web.
       </p>
     </div>
+
     <div class="cards">
+
       <div class="card">
+
         <h3>Planner Ademicon</h3>
+
         <p>
           Sistema completo de agenda digital desenvolvido com frontend moderno, backend integrado e banco de dados Supabase. O projeto possui autenticação, gerenciamento de eventos e foco em experiência intuitiva para o usuário.
         </p>
+
         <span style="color:#d61c8c;font-weight:600;">
           Projeto completo com Supabase e backend integrado
         </span>
+
       </div>
+
       <div class="card">
+
         <h3>Portfólio Pessoal</h3>
+
         <p>
           Portfólio desenvolvido para apresentação profissional, reunindo projetos acadêmicos, habilidades e experiências em desenvolvimento web.
         </p>
+
         <span style="color:#d61c8c;font-weight:600;">
           Portfólio profissional
         </span>
+
       </div>
+
       <div class="card">
+
         <h3>Calculadora em Assembly</h3>
+
         <p>
           Projeto acadêmico desenvolvido utilizando linguagem Assembly, com implementação de operações matemáticas e lógica de baixo nível.
         </p>
+
         <span style="color:#d61c8c;font-weight:600;">
           Projeto acadêmico
         </span>
+
       </div>
+
     </div>
+
   </section>
+
   <footer id="contato">
+
     <h2 style="margin-bottom:20px;color:#4b0055;font-size:38px;">
       Contato
     </h2>
+
     <p style="max-width:600px;margin:0 auto 40px auto;line-height:1.8;color:#666;">
       Entre em contato através das plataformas abaixo para networking, oportunidades acadêmicas e desenvolvimento profissional.
     </p>
-    <div style="display:flex;justify-content:center;gap:20px;flex-wrap:wrap;margin-bottom:40px;">
-      <a 
+
+    <div class="contact-buttons">
+
+      <a
         href="https://github.com/isadoraslavov"
         target="_blank"
-        style="background:white;padding:18px 26px;border-radius:18px;text-decoration:none;color:#4b0055;font-weight:600;box-shadow:0 10px 30px rgba(0,0,0,0.08);transition:0.3s;"
+        class="contact-card"
       >
         GitHub
       </a>
-      <a 
-        href="https://www.linkedin.com/in/isadora-slavov-222b36395?utm_source=share_via&utm_content=profile&utm_medium=member_ios"
+
+      <a
+        href="https://www.linkedin.com/in/isadora-slavov-222b36395"
         target="_blank"
-        style="background:white;padding:18px 26px;border-radius:18px;text-decoration:none;color:#4b0055;font-weight:600;box-shadow:0 10px 30px rgba(0,0,0,0.08);transition:0.3s;"
+        class="contact-card"
       >
         LinkedIn
       </a>
-      <a 
+
+      <a
         href="mailto:isadoraslavov@gmail.com"
-        style="background:white;padding:18px 26px;border-radius:18px;text-decoration:none;color:#4b0055;font-weight:600;box-shadow:0 10px 30px rgba(0,0,0,0.08);transition:0.3s;"
+        class="contact-card"
       >
         E-mail
       </a>
+
     </div>
-    <p style="color:#888;">
+
+    <p class="footer-text">
       Desenvolvido por Isadora Slavov • Ciência da Computação • CEUB
     </p>
+
   </footer>
+
 </body>
 </html>
