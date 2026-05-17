@@ -1,5 +1,3 @@
-index.html
-
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -232,11 +230,7 @@ index.html
   <div class="background"></div>
   <header>
     <div class="logo">Isadora Slavov</div>
-    <nav>
-      <a href="#sobre">Sobre</a>
-      <a href="#projetos">Projetos</a>
-      <a href="#contato">Contato</a>
-    </nav>
+    <nav></nav>
   </header>
   <section class="hero" id="sobre">
     <div class="hero-content">
@@ -257,11 +251,23 @@ index.html
             Projetos
           </a>
           <a
-            href="https://github.com/isadoraslavov"
+            href="#projetos"
+            class="btn btn-primary"
+          >
+            Projetos
+          </a>
+          <a
+            href="#contato"
+            class="btn btn-secondary"
+          >
+            Contato
+          </a>
+          <a
+            href="curriculo.pdf"
             target="_blank"
             class="btn btn-secondary"
           >
-            GitHub
+            Download CV
           </a>
         </div>
       </div>
@@ -311,40 +317,37 @@ index.html
     </div>
   </section>
   <footer id="contato">
-    <h2 style="margin-bottom:20px;color:#4b0055;">Contato</h2>
-    <p style="margin-bottom:14px;">
-      GitHub: 
-      <a href="https://github.com/isadoraslavov" target="_blank" style="color:#d61c8c;text-decoration:none;">
-        github.com/isadoraslavov
-      </a>
+    <h2 style="margin-bottom:20px;color:#4b0055;font-size:38px;">
+      Contato
+    </h2>
+    <p style="max-width:600px;margin:0 auto 40px auto;line-height:1.8;color:#666;">
+      Entre em contato através das plataformas abaixo para networking, oportunidades acadêmicas e desenvolvimento profissional.
     </p>
-    <p style="margin-bottom:14px;">
-      LinkedIn:
-      <a href="https://www.linkedin.com/in/isadora-slavov-222b36395?utm_source=share_via&utm_content=profile&utm_medium=member_ios" target="_blank" style="color:#d61c8c;text-decoration:none;">
-        linkedin.com/in/isadora-slavov
+    <div style="display:flex;justify-content:center;gap:20px;flex-wrap:wrap;margin-bottom:40px;">
+      <a 
+        href="https://github.com/isadoraslavov"
+        target="_blank"
+        style="background:white;padding:18px 26px;border-radius:18px;text-decoration:none;color:#4b0055;font-weight:600;box-shadow:0 10px 30px rgba(0,0,0,0.08);transition:0.3s;"
+      >
+        GitHub
       </a>
-    </p>
-    <p style="margin-bottom:30px;">
-      E-mail:
-      <a href="mailto:isadoraslavov@gmail.com" style="color:#d61c8c;text-decoration:none;">
-        isadoraslavov@gmail.com
+      <a 
+        href="https://www.linkedin.com/in/isadora-slavov-222b36395?utm_source=share_via&utm_content=profile&utm_medium=member_ios"
+        target="_blank"
+        style="background:white;padding:18px 26px;border-radius:18px;text-decoration:none;color:#4b0055;font-weight:600;box-shadow:0 10px 30px rgba(0,0,0,0.08);transition:0.3s;"
+      >
+        LinkedIn
       </a>
+      <a 
+        href="mailto:isadoraslavov@gmail.com"
+        style="background:white;padding:18px 26px;border-radius:18px;text-decoration:none;color:#4b0055;font-weight:600;box-shadow:0 10px 30px rgba(0,0,0,0.08);transition:0.3s;"
+      >
+        E-mail
+      </a>
+    </div>
+    <p style="color:#888;">
+      Desenvolvido por Isadora Slavov • Ciência da Computação • CEUB
     </p>
-    Desenvolvido por Isadora Slavov • Ciência da Computação • CEUB
   </footer>
 </body>
 </html>
-
-Estrutura da pasta
-
-index.html
-foto.jpg
-curriculo.pdf
-# Como publicar
-1. Sobe o index.html, foto.jpg e curriculo.pdf no GitHub
-2. Vai em Settings
-3. Pages
-4. Deploy from branch
-5. main
-6. Save
-Depois o GitHub gera o link automático da sua GitHub Page.
